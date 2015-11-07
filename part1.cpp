@@ -4,6 +4,8 @@
 #include <string>
 #include <math.h>
 #include <chrono>
+#include <iomanip>
+
 using namespace std;
 
 struct point2D {
@@ -85,6 +87,7 @@ int main() {
   int microseconds = 
     chrono::duration_cast<chrono::microseconds>(end - start).count();
   double seconds = microseconds / 1E6;
+  cout << fixed << setprecision(9);
   cout << "elapsed time: " << seconds << " seconds" << endl;
   
   // de-allocate the dynamic memory space
