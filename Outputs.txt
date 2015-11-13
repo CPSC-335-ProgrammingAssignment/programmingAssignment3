@@ -1,3 +1,9 @@
+#####################################################################################
+#Duy Do
+#Billy Saysavath
+#Programming Assignment 3 - CPSC335 Outputs
+#####################################################################################
+
 Exhaustive Optimization Algorithm:
 
 Test 1:
