@@ -1,3 +1,11 @@
+// Assignment 3: Euclidean traveling salesperson problem: exhaustive optimization algorithm
+// Duy Do           - CWID: 891242679
+// Billy Saysavath  - CWID: 891424020
+// CPSC 335 - Section 3 - Fall 2015
+// A special case of the classical traveling salesman problem (TSP) where the input is a Euclidean graph
+// INPUT: a positive integer n and a list P of n distinct points representing vertices of a Euclidean graph
+// OUTPUT: a list of n points from P representing a Hamiltonian cycle of minimum total weight for the graph.
+
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
