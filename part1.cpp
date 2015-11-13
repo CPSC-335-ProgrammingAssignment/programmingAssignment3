@@ -1,3 +1,11 @@
+// Assignment 3: Euclidean traveling salesperson problem: exhaustive optimization algorithm
+// Duy Do           - CWID: 891242679
+// Billy Saysavath  - CWID: 891424020
+// CPSC 335 - Section 3 - Fall 2015
+// A special case of the classical traveling salesman problem (TSP) where the input is a Euclidean graph
+// INPUT: a positive integer n and a list P of n distinct points representing vertices of a Euclidean graph
+// OUTPUT: a list of n points from P representing a Hamiltonian cycle of minimum total weight for the graph.
+
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
@@ -30,7 +38,7 @@ int main() {
   float bestDist, Dist;
   
   // display the header
-  cout << endl << "CPSC 335-x - Programming Assignment #3" << endl;
+  cout << endl << "CPSC 335-3 - Programming Assignment #3" << endl;
   cout << "Euclidean traveling salesperson problem: exhaustive optimization algorithm" << endl;
   cout << "Enter the number of vertices (>2) " << endl; 
   
@@ -116,18 +124,18 @@ void print_cycle(int n, point2D *P, int *seq)
 float farthest(int n, point2D *P)
 // function to calculate the furthest distance between any two 2D points
 {
-  float max_dist;
-  int i;
-  float dist;
-  
-  // assume that the farthest distance is between point 0 and point n-1
-  max_dist = sqrt( (P[0].x - P[n-1].x)*(P[0].x - P[n-1].x)  + (P[0].y - P[n-1].y)*(P[0].y - P[n-1].y) );
-  for (i=0; i < n-1; i++) {
-    dist = sqrt(  (P[i].x - P[i+1].x)*(P[i].x - P[i+1].x) +  (P[i].y - P[i+1].y)*(P[i].y - P[i+1].y) );
-    if (max_dist < dist)
-      max_dist = dist;
-  }
-  return max_dist;
+    float max_dist=0;
+    int i, j;
+    float dist;
+    
+    for(i=0; i < n-1; i++)
+        for(j=0; j < n-1; j++)
+        {
+            dist = (P[i].x - P[j].x)*(P[i].x - P[j].x) + (P[i].y - P[j].y)*(P[i].y - P[j].y);
+            if (max_dist < dist)
+                max_dist = dist;
+        }
+    return sqrt(max_dist);
 }
 
 void print_perm(int n, int *A, int sizeA, point2D *P, int *bestSet, float &bestDist) 

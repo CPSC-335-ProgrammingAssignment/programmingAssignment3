@@ -1,5 +1,7 @@
 // Assignment 3: Euclidean traveling salesperson problem: improved nearest neighbor algorithm
-// XX YY ( YOU NEED TO COMPLETE YOUR NAME )
+// Duy Do           - CWID: 891242679
+// Billy Saysavath  - CWID: 891424020
+// CPSC 335 - Section 3 - Fall 2015
 // A special case of the classical traveling salesman problem (TSP) where the input is a Euclidean graph
 // INPUT: a positive integer n and a list P of n distinct points representing vertices of a Euclidean graph
 // OUTPUT: a list of n points from P representing a Hamiltonian cycle of relatively minimum total weight 
@@ -38,8 +40,8 @@ int main() {
   int A, B;
   
   // display the header
-  cout << endl << "CPSC 335-x - Programming Assignment #3" << endl;
-  cout << "Euclidean traveling salesperson problem: exhaustive optimization algorithm" << endl;
+  cout << endl << "CPSC 335-3 - Programming Assignment #3" << endl;
+  cout << "Euclidean traveling salesperson problem: improved nearest neighbor algorithm" << endl;
   cout << "Enter the number of vertices (>2) " << endl; 
   
   // read the number of elements
