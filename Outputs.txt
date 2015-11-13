@@ -1,0 +1,207 @@
+Exhaustive Optimization Algorithm:
+
+Test 1:
+
+CPSC 335-3 - Programming Assignment #3
+Euclidean traveling salesperson problem: exhaustive optimization algorithm
+Enter the number of vertices (>2) 
+4
+Enter the points; make sure that they are distinct
+x=2
+y=0
+x=1
+y=1
+x=3
+y=1
+x=0.1
+y=0
+The Hamiltonian cycle of the minimum length 
+(2,0) (3,1) (1,1) (0.1,0) (2,0) 
+Minimum length is 6.65958
+elapsed time: 0.000007000 seconds
+
+Test 2:
+
+CPSC 335-3 - Programming Assignment #3
+Euclidean traveling salesperson problem: exhaustive optimization algorithm
+Enter the number of vertices (>2) 
+8
+Enter the points; make sure that they are distinct
+x=0
+y=4
+x=2
+y=1
+x=1
+y=6
+x=2
+y=7
+x=3
+y=5
+x=3
+y=2
+x=5
+y=2
+x=6
+y=5
+The Hamiltonian cycle of the minimum length 
+(5,2) (6,5) (3,5) (2,7) (1,6) (0,4) (2,1) (3,2) (5,2) 
+Minimum length is 19.0684
+elapsed time: 0.008837000 seconds
+
+Test 3:
+
+CPSC 335-3 - Programming Assignment #3
+Euclidean traveling salesperson problem: exhaustive optimization algorithm
+Enter the number of vertices (>2) 
+10
+Enter the points; make sure that they are distinct
+x=2
+y=9
+x=3
+y=8
+x=1
+y=2
+x=7
+y=5
+x=3
+y=9
+x=9
+y=8
+x=4
+y=9
+x=5
+y=1
+x=2
+y=3
+x=7
+y=2
+The Hamiltonian cycle of the minimum length 
+(5,1) (7,2) (7,5) (9,8) (4,9) (3,9) (2,9) (3,8) (2,3) (1,2) (5,1) 
+Minimum length is 27.9912
+elapsed time: 0.536087000 seconds
+
+------------------------------------------------------------------------------
+
+Improved Nearest Neighbor Algorithm:
+
+Test 1:
+
+CPSC 335-3 - Programming Assignment #3
+Euclidean traveling salesperson problem: improved nearest neighbor algorithm
+Enter the number of vertices (>2) 
+4
+Enter the points; make sure that they are distinct
+x=2
+y=0
+x=1
+y=1
+x=3
+y=1
+x=0.1
+y=0
+The Hamiltonian cycle of a relative minimum length 
+(1,1) (0.1,0) (2,0) (3,1) (1,1) 
+The relative minimum length is 6.65958
+elapsed time: 0.000005000 seconds
+
+Test 2:
+
+CPSC 335-3 - Programming Assignment #3
+Euclidean traveling salesperson problem: improved nearest neighbor algorithm
+Enter the number of vertices (>2) 
+8
+Enter the points; make sure that they are distinct
+x=0
+y=4
+x=2
+y=1
+x=1
+y=6
+x=2
+y=7
+x=3
+y=5
+x=3
+y=2
+x=5
+y=2
+x=6
+y=5
+The Hamiltonian cycle of a relative minimum length 
+(0,4) (1,6) (2,7) (3,5) (6,5) (5,2) (3,2) (2,1) (0,4) 
+The relative minimum length is 19.0684
+elapsed time: 0.000005000 seconds
+
+Test 3:
+
+CPSC 335-3 - Programming Assignment #3
+Euclidean traveling salesperson problem: improved nearest neighbor algorithm
+Enter the number of vertices (>2) 
+10
+Enter the points; make sure that they are distinct
+x=2
+y=9
+x=3
+y=8
+x=1
+y=2
+x=7
+y=5
+x=3
+y=9
+x=9
+y=8
+x=4
+y=9
+x=5
+y=1
+x=2
+y=3
+x=7
+y=2
+The Hamiltonian cycle of a relative minimum length 
+(2,9) (3,9) (3,8) (4,9) (7,5) (7,2) (5,1) (2,3) (1,2) (9,8) (2,9) 
+The relative minimum length is 35.7411
+elapsed time: 0.000008000 seconds
+
+Test 4:
+
+CPSC 335-3 - Programming Assignment #3
+Euclidean traveling salesperson problem: improved nearest neighbor algorithm
+Enter the number of vertices (>2) 
+15
+Enter the points; make sure that they are distinct
+x=3
+y=2
+x=1
+y=8
+x=2
+y=4
+x=9
+y=9
+x=5
+y=5
+x=6
+y=4
+x=4
+y=9
+x=9
+y=2
+x=8
+y=3
+x=4
+y=9
+x=8
+y=8
+x=7
+y=7
+x=9
+y=6
+x=1
+y=7
+x=6
+y=1
+The Hamiltonian cycle of a relative minimum length 
+(9,2) (8,3) (6,4) (5,5) (7,7) (8,8) (9,9) (9,6) (6,1) (3,2) (2,4) (1,7) (1,8) (4,9) (4,9) (9,2) 
+The relative minimum length is 40.8775
+elapsed time: 0.000016000 seconds

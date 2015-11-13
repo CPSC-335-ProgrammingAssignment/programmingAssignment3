@@ -172,7 +172,7 @@ int nearest(int n, point2D *P, int A, bool *Visited)
     if ( !Visited[i] ){
       dist = sqrt(  (P[A].x - P[i].x)*(P[A].x - P[i].x) +  (P[A].y - P[i].y)*(P[A].y - P[i].y) );
       if (min_dist > dist){
-	min_dist = dist;
+	    min_dist = dist;
         nearest = i;
       }
     }
