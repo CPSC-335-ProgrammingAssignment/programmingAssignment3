@@ -40,8 +40,8 @@ int main() {
   int A, B;
   
   // display the header
-  cout << endl << "CPSC 335-x - Programming Assignment #3" << endl;
-  cout << "Euclidean traveling salesperson problem: exhaustive optimization algorithm" << endl;
+  cout << endl << "CPSC 335-3 - Programming Assignment #3" << endl;
+  cout << "Euclidean traveling salesperson problem: improved nearest neighbor algorithm" << endl;
   cout << "Enter the number of vertices (>2) " << endl; 
   
   // read the number of elements
