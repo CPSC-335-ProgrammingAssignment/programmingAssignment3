@@ -129,7 +129,7 @@ int farthest_point(int n, point2D *P)
 {
   int farthest_point = 0;
   float max_dist;
-  int i;
+  int i, j;
   float dist;
   
   // assume that the farthest distance is between point 0 and point n-1 and the fartest_point is 0
@@ -138,7 +138,8 @@ int farthest_point(int n, point2D *P)
 
   // Compare with other distances from other points
   for (i=0; i < n-1; i++) {
-    dist = sqrt(  (P[i].x - P[i+1].x)*(P[i].x - P[i+1].x) +  (P[i].y - P[i+1].y)*(P[i].y - P[i+1].y) );
+    for (j=0; j < n-1; j++) 
+    dist = sqrt(  (P[i].x - P[j].x)*(P[i].x - P[j].x) +  (P[i].y - P[j].y)*(P[i].y - P[j].y) );
     if (max_dist < dist){
       max_dist = dist;
       farthest_point = i;
