@@ -165,10 +165,10 @@ void print_perm(int n, int *A, int sizeA, point2D *P, int *bestSet, float &bestD
     for(i = 0 ; i< n-1; i++) {
       print_perm(n - 1, A, sizeA, P, bestSet, bestDist);
       if (n%2 == 0) {
-    // swap(A[i], A[n-1])
-    int temp = A[i];
-    A[i] = A[n-1];
-    A[n-1]=temp;
+        // swap(A[i], A[n-1])
+        int temp = A[i];
+        A[i] = A[n-1];
+        A[n-1]=temp;
       }
       else
     {
@@ -178,6 +178,6 @@ void print_perm(int n, int *A, int sizeA, point2D *P, int *bestSet, float &bestD
       A[n-1]=temp;
     }
     }
-    print_perm(n - 1, A, sizeA, P, bestSet, bestDist);
+      print_perm(n - 1, A, sizeA, P, bestSet, bestDist);
   }
 }
