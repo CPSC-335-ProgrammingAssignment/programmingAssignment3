@@ -172,12 +172,12 @@ void print_perm(int n, int *A, int sizeA, point2D *P, int *bestSet, float &bestD
       }
       else
     {
-        // swap(A[0], A[n-1])
-        int temp = A[0];
-        A[0] = A[n-1];
-        A[n-1]=temp;
+      // swap(A[0], A[n-1])
+      int temp = A[0];
+      A[0] = A[n-1];
+      A[n-1]=temp;
     }
     }
-        print_perm(n - 1, A, sizeA, P, bestSet, bestDist);
+      print_perm(n - 1, A, sizeA, P, bestSet, bestDist);
   }
 }
