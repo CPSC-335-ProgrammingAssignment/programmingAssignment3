@@ -1,7 +1,7 @@
 // Assignment 3: Euclidean traveling salesperson problem: improved nearest neighbor algorithm
 // Duy Do           - CWID: 891242679
 // Billy Saysavath  - CWID: 891424020
-// Kim Phung Tran
+// Phung Tran
 // CPSC 335 - Section 3 - Fall 2015
 // A special case of the classical traveling salesman problem (TSP) where the input is a Euclidean graph
 // INPUT: a positive integer n and a list P of n distinct points representing vertices of a Euclidean graph
